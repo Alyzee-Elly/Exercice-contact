@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egget Hover</title>
+    <style>
+        body{display:flex;justify-content: center;}
+        img{width: 350px;height: 350px;border-radius:50%;
+        transition:all 2s;}     
+    
+        figure{position: relative;}
+        figcaption{position:absolute;top:0;
+            background-color:rgba(0,0,0,0.5);
+            width: 350px;height:350px;border-radius: 50%;
+            color:#fff;
+            /*positionner horizontalement et verticlament*/
+            display:flex;flex-direction:column;align-items:center;justify-content:center;
+            /*point de départ : déplacement (translate) à partir de la gauche */
+            transform: translateX(-100px);
+            transition:all 2s;opacity: 0;}
+
+            /*Faire disparaitre le texte dès le départ puis au passage de la souris, le texte apparait en 2 secondes*/
+
+            h4,p{opacity: 0;transition: opacity 8s;}
+
+            /*quand on passe la souris sur le lien de l'image, rotation de 90 degré*/
+
+            a:hover img{transform: rotate(90deg);}
+            a:hover figcaption{transform:translateX(0);opacity: 1;}
+            a:hover h4,a:hover p{opacity:1;}
+
+    </style>
+</head>
+<body>
+    <figure>
+        <a href="#">
+         <img src="img/images/1.jpg" title="Mots clés pour le SEO">
+            <figcaption>
+            <h4>Titre du projet</h4>
+            <p>Titre de l'image ou légende</p>
+            </figcaption>
+        </a>
+    </figure>
+
+</body>
+</html>

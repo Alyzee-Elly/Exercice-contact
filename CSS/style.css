@@ -1,0 +1,198 @@
+/*font-family: 'Cinzel', serif;
+font-family: 'Open Sans', sans-serif;
+
+#eccdb4 : beige clair
+#f0edd4 : beige foncé
+#f9fbe7 : rose clair
+#252B48 : bleu foncé
+*/
+body{margin:0;font-family:'Open Sans', sans-serif;color:#252B48;padding-top:80px;}
+
+h1,h2,h3,h4,h5,h6{font-family:'Cinzel',serif;}
+/*LES LIENS*/
+a{text-decoration:none;color:inherit;}
+a{text-decoration:none;}
+a:link{color:#252B48;}
+a:visited{color:#ccc;}
+a:active{color:aqua;background-color:#fff;}
+a:hover{color:#b2748c;}
+
+
+/*lien non visité:           a:link
+lien visité :                a: visited
+lien actif :                 a:active
+lien passage de la souris :  a:hover*/
+
+.flex{display:flex;}
+.overlay::before{
+
+    width:100%;height:100%;
+    position:absolute;content:"";
+    background:rgba(0,0,0,0.4);
+    z-index:0;
+}
+
+nav{background:#fff;}
+
+/*MASQUE*/
+.mask1{
+    mask-image:url(../images/shape_two.svg);
+    -webkit-mask-image:url(../images/shape_two.svg);
+    mask-repeat:space;
+    -webkit-mask-repeat: space;
+    mask-size:100%;
+    -webkit-mask-size: 100%;
+    mask-position:left top;
+    -webkit-mask-position:left bottom;
+    mask-mode:alpha;
+    -webkit-mask-mode:alpha;
+}
+
+/*HEADER*/
+header{justify-content: center;}
+ul{list-style-type:none;
+    justify-content: space-around;}
+nav{flex:0 0 35%;}
+/*menu à l'horizontal*/
+/*li{display:inline-block}*/
+
+/*SLIDER*/
+#slider{background: url(../images/open-space-interior-small.jpg)no-repeat center 
+center scroll#fff;
+height:500px;
+background-size: cover;
+justify-content: center;
+align-content: center;
+flex-direction: column;
+flex-wrap: wrap;
+position:relative;
+color:#eccdb4;
+}
+
+#slider h1,#slider p,#slider button
+{position:relative;}
+
+#slider{font-size:1em;}
+#slider button{width:15%;}
+
+/*PRESENTAITON*/
+#presentation {justify-content: center;padding:3em;}
+#presentation div{flex: 0 0 20%}
+
+/*PRODUITS*/
+#produits {flex-wrap:wrap;justify-content: center;background-color: #f5ede6;}
+#produits img{width: 100%;border-radius: 13.750em 13.750em 0 0;}
+#produits article{flex: 0 0 20%;margin: 2em 3em;text-align:center}
+#produit h3{font-size:1em;margin-top:1em;}
+
+/*SERVICES*/
+#services{text-align:center;}
+#services-article{justify-content: center; flex-wrap:wrap;}
+#services-article article{flex: 0 0 20%;margin:2em 3em;}
+/*pseudo-classes*/
+#services article:first-child{color:#b2748c;font-weight: bold;}
+#services article:last-child{color:violet;font-weight:bold;}
+
+/*CONCEPT*/
+#concept{background-color: #f5ede6;padding:0;}
+#concept img{width:100%;}
+#concept div{text-align: center;}
+
+#concept div:nth-child(2){padding:10% 0;}
+/*Pseudo-éléments ::*/
+h4::first-letter{font-size:2em;color:#b2748c;}
+h3::first-line{font-size:1.5em;color:#b2748c;}
+
+/*BOUTIQUE*/
+#boutique{justify-content: center;}
+#boutique img{width:100%;}
+#boutique div{flex:0 0 20%;margin: 2em 3em;}
+/* 1 ere image du 1er enfnat (div): border-radius: 220px 0 220px 0;*/
+
+#boutique div:first-child img{border-radius:220px 0 220px 0;}
+
+/*1ere image du dernier enfant ou du 2eme : border-radius:0 220px 220px;*/
+
+#boutique div:last-child img{border-radius: 0 220px 0 220px;}
+/*#boutique div:nth-child(2) img#border-radius: 0 220px 0 220px;}*/
+
+
+/*TEMOIGNAGES*/
+
+#temoignages{background:url(../images/sunlight-art-drawing-painting-studio-lifestyle-woman-work-artist-art-studio-small.jpg) no-repeat center center scroll#000;
+background-size:cover;
+position: relative;
+padding:0;}
+
+#temoignages h4{position: relative;color:#f0edd4;
+text-align: center;}
+#temoignages article{background-color:#fff;color:#8f8f8f;position:relative;margin:2em 2em;flex: 0 0 30%;padding:2em;
+border-radius:1em;}
+
+#temoignages .flex{flex-wrap:wrap;justify-content: center;}
+#temoignages .flex1{display:flex; justify-content: center;}
+#temoignages .flex1 img{width:80px;
+border-radius:50%;}
+#temoignages .photo{margin-right: 2em;}
+
+/*ACTIONS*/
+#action{justify-content: center;}
+#action div{flex: 0 0 30%}
+#action .btn-contact{text-align:center;}
+
+/*INFOS*/
+#infos{justify-content: center;background-color:#f5ede6;}
+#infos div{flex:0 0 20%;margin:2em;}
+
+#infos i{margin-right:1em;color:#b2748c;}
+#infos i:hover{color:#b2748c}
+#infos p{text-align:justify;}
+
+footer{background-color:#b2748c;padding:1em;text-align:center;color:#fff;}
+
+/*PAGE ABOUT*/
+/*COMPTEUR*/
+#compteur{background:url(../images/mirror-room-makeup-small.jpg)no-repeat 0 bottom scroll #000;
+    position: relative;
+    padding:0;
+    background-size:cover;
+}
+
+#compteur div{color:#fff;
+    font-weight: bold
+    font-size 2em;
+    position: relative;text-align:center;
+    padding:3em;}
+
+    #about-action div:nth-child(2){
+        text-align: center;}
+
+/*PRESENTATION ABOUT*/
+#presentation-about{background:url(../images/interior-of-a-shop-selling-clothes-and-accessories-small.jpg) no-repeat scroll center center #000;background-size:cover;
+position:relative;padding:0;
+height:250px;
+}
+
+#presentation-about h1{color:#fff;position:relative;}
+
+/*PAGE CONTACT*/
+.vignette{width: 50%;}
+
+
+
+/*BOOTSTRAP*/
+
+.btn-primary {background-color:#b2748c;
+border-color:#905c70;}
+
+.btn-primary:hover{
+    background-color:#905c70;
+    border-color:#b2748c;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link{color:#fff; background-color: #b2748c;}
+
+.bg-light{background-color:rgba(243, 222, 236, 0.733)!important}
+
+

@@ -1,0 +1,42 @@
+@media screen and (max-width:414px){
+    /*Instuctions*/
+
+    #presentation.flex{display: block;padding:0.8em;}
+    .flex{display: block;}
+
+    /*#slider{padding:0;background: none; height:auto;}*/
+
+    #slider{display:none;}
+    #boutique div:first-child img{border-radius: 100px 0px;}
+    #boutique div:last-child img{border-radius: 0 100px;}
+
+}
+
+/*aafichage sur les écrans entre 600 et 768px*/
+@media screen and (min-width:600px) and (max-width:768px){
+
+    section{padding:1em;}
+    #slider{padding:0;}
+    #slider h1,#slider h2{padding:1em;}
+    #presentation.flex{display: block;}
+    #presentation div{margin-bottom:1em;}
+    #presentation article{flex:0 0 35%;}
+
+        #infos{display: block;text-align:center;}
+        #action div{flex:0 0 40%;}
+        #concept div:nth-child(2){padding:0 0.5em;}
+
+        #boutique div{flex:0 0 40;}
+        #boutique div:first-child img{border-radius: 60px 0px;}
+
+        #boutique div:last-child{display:none;}
+
+        #action{align-items:center;}
+        #slider button {width:30%;}
+
+}
+/*sur les ecrans en mode paysage*/
+@media all and (max-widht:768px){
+    #compteur{display:none;}
+    section{padding:2em;}
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <h1>Cours sur les animations</h1>
+    <!--Déplacements sur la droite (valeurs positives) sur la gauche (valeurs négatives)-->
+    <!--
+    ==========================TRANSFORMATIONS:========================== 
+    SCALE = zoom
+    ROTATE = Rotation (en degres)
+    TRANSLATE (100px, 100px) = déplacement sur l'axe xet l'axe y 
+    translatey()
+    translatex()
+    SKEWdeg(deg) => déformation
+    SKEWX(deg)
+    SKEWY (deg)
+    Transition toujours sur l'éléments statique (de base)
+
+    ==========================TRANSITIONS==========================
+
+    ==========================ANIMATION==========================
+-->
+    
+    
+    <style>
+        .bleu{background:blue;color:#000;font-size:3em;
+    width:200px;height:200px;
+    transform:rotate(45deg) scale(0.5) skew(-25deg);
+    transition-property: all;/*change tous les paramètres*/
+    transition-duration: 2000ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0ms;
+    /*proprièté raccourcie*/
+    transition: all 3000ms ease 0ms;
+    animation: disparition 5s infinite; 
+}
+
+    .bleu:hover{background:red;
+    transform:scale(1) rotate(-45deg) translate(200px,300px);}
+
+    /*Création d'une animation*/
+    /*Apparition et disparition d'un élément*/
+
+    @keyframes disparition{
+        0%{opacity: 1;}
+        50%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+
+
+
+    </style>
+</head>
+
+
+<body>  
+    <h1>Cours sur les animations</h1>
+    <div class="bleu">
+       <p>TEST</p>
+    </div>  
+</body>
+</html>

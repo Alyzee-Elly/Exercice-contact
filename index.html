@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--affichage par rapport à la taille de l'écran-->
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <title>Balise qui s'affiche en haut dans le navigateur</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        <!--11 lignes header et footer inclus-->
+        <!--emmet: section*9+TAB-->
+
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!--marque+item-->
+                    <a href="index.html">
+                        <h4>ARTISANS</h4>
+                    </a>
+                    <!--bouton-->
+                    <button class="navbar-toggler" type="botton" data-bs-toggle="collapse"data-bs-toggle="#navSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--menu-->
+                    <div id="navSupportedContent" class="collapse navbar-collapse">                       
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html"class="nav-link">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.php"class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+            <!--icone recherche-->
+        <form role="search">
+            <input type="search" placeholder="Mots clés" class="">
+            <button type="submit" class="btn btn-outline-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+        
+            </button>
+        </form>
+            
+        <section id="slider" class="flex overlay align-items-center">
+            <h1>Artisans d'ici et d'ailleurs</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit inventore asperiores fugiat nihil maxime, doloribus deleniti vero reprehenderit perspiciatis fuga minus dolore molestiae laborum repudiandae reiciendis voluptates cupiditate aliquam soluta.</p>
+            <button class="btn btn-primary">Rechercher un produit</button>
+            
+            </section>
+        <section id="presentation"class="flex">
+                <div>
+                <h4>Présentation</h4>
+                <h3>L'innovation est notre passion</h3>
+                <button class="btn btn-primary">Contact</button>
+            </div> 
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatibus ipsam repellendus repudiandae corrupti mollitia voluptatum necessitatibus distinctio, velit molestias eaque quia magni odio, saepe, non ex. Magni, ducimus libero.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </section>
+
+        <section id="produits" class="flex">
+            <article>
+                <img src="images/interior-with-antuques-small.jpg">
+                <h3>produit N°1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam at eum facilis provident, aliquid id et voluptas odit earum cum velit debitis quia, reiciendis placeat, dolores eos reprehenderit tempore perspiciatis!</p>
+            </article>
+
+
+            <article>
+                <img src="images/ceramic-craft-ware-small.jpg">
+                <h3>produit N°1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam at eum facilis provident, aliquid id et voluptas odit earum cum velit debitis quia, reiciendis placeat, dolores eos reprehenderit tempore perspiciatis!</p>
+            </article>
+
+
+            <article>
+                <img src="images/close-up-of-male-hand-of-potter-examining-clay-cup-small.jpg">
+                <h3>produit N°1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam at eum facilis provident, aliquid id et voluptas odit earum cum velit debitis quia, reiciendis placeat, dolores eos reprehenderit tempore perspiciatis!</p>
+            </article>
+
+
+            <article>
+                <img src="images/jewelry-and-bijouterie-small.jpg">
+                <h3>produit N°1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam at eum facilis provident, aliquid id et voluptas odit earum cum velit debitis quia, reiciendis placeat, dolores eos reprehenderit tempore perspiciatis!</p>
+            </article>
+
+
+            <article>
+                <img src="images/leather-crafting-tools-small.jpg">
+                <h3>produit N°1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam at eum facilis provident, aliquid id et voluptas odit earum cum velit debitis quia, reiciendis placeat, dolores eos reprehenderit tempore perspiciatis!</p>
+            </article>
+
+
+            <article>
+                <img src="images/shopping-leather-handmade-crafts-shop-bags-craftsmanship-small-768x1024.jpg">
+                <h3>produit N°1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam at eum facilis provident, aliquid id et voluptas odit earum cum velit debitis quia, reiciendis placeat, dolores eos reprehenderit tempore perspiciatis!</p>
+            </article>
+            </section>
+
+
+        <section id="services">
+
+            <h4>Pourquoi nous choisir ?</h4>
+
+            <div id="services-article" class="flex">
+            <article>
+                    <img src="images/Icon-Idea-osj6biskjmfmkqdbepwnbc3cuylf6pparnzforpngk.png">
+                    <h5>Lorem ipsum</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            </article>
+
+
+        <article>
+                    <img src="images/Icon-quality-osj6zgqkmp7kb5lalkhjbsl1lal095r5q67ori7mys.png">
+                    <h5>Lorem ipsum</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </article>
+
+
+        <article>
+                <img src="images/Icon-speed-osj726hsdgxdulnaqqqqj3wzdd76hoj8rm26oa6ozo.png">
+                <h5>Lorem ipsum</h5>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </article>
+
+
+        <article>
+                 <img src="images/Icon-graphic-osj79c1ke2py7r96yu2iiaxa4xxr2qxp30t863ktms.png">
+                 <h5>Lorem ipsum</h5>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </article>
+
+
+        <article>
+                 <img src="images/Icon-world-osj7b22wx52vi0r2wkvw2v9pcdfz6rrzbjv9ud0u84.png">
+                <h5>Lorem ipsum</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </article>
+
+
+        <article>
+                <img src="images/Icon-packaging-osj7cnf2i19d68fslro4systkvld8b3lvfnw48ntok.png">
+                <h5>Lorem ipsum</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                 </article>
+         </div>
+
+        </section>
+
+    
+        <section id="concept" class="flex">
+            <div>
+                <img src="images/woman-rolling-out-material-for-craft-small.jpg" alt="">
+
+            </div>
+
+            <div>
+                <h4>Parlons du concept</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt! Odit pariatur obcaecati ad laudantium sed quos explicabo, officiis, sit accusamus maiores est voluptatem beatae quae unde, exercitationem recusandae cum?</p>
+                <button class="btn btn-primary">Détails</button>
+            </div>
+        </section>
+
+
+        <section id="boutique" class="flex align-items-center">
+            <div>
+                <img src="Images/paper-waste-for-recycle-small-768x1024.jpg">
+            </div>
+            <div>
+                <h4>Lorem ipsum dolor</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatem quam fuga fugiat distinctio, nostrum laborum exercitationem molestias eveniet pariatur minima ab dolorum labore aliquid iure, voluptate saepe placeat corporis.</p>
+            </div>
+            <div>
+            <img src="images/shopping-leather-handmade-crafts-shop-bags-craftsmanship-small-768x1024.jpg"></div>
+        </section>
+
+
+        <section id="temoignages" class="overlay">
+            <h4>Les témoignages?</h4>
+            <div class="flex">
+                <article>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime ab, laudantium iusto minima quos magni amet illo modi repellendus blanditiis alias esse odio similique veritatis quisquam ipsam sequi, eum ullam.</p>
+                    <div class="flex1">
+                        <div class="photo">
+                    <img src="images/testimonial-1.jpg" alt=""></div>
+                
+                    <div class="identite">
+                    <h5>Nom prénom</h5>
+                    <h6>Métier</h6>
+                </div>
+                </div>
+                </article>
+                <article>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime ab, laudantium iusto minima quos magni amet illo modi repellendus blanditiis alias esse odio similique veritatis quisquam ipsam sequi, eum ullam.</p>
+                    <div class="flex1">
+                        <div class="photo">
+                    <img src="images/testimonial-2.jpg" alt=""></div>
+                
+                    <div class="identite">
+                    <h5>Nom prénom</h5>
+                    <h6>Métier</h6>
+                </div>
+                </div>
+                </article>
+                <article>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime ab, laudantium iusto minima quos magni amet illo modi repellendus blanditiis alias esse odio similique veritatis quisquam ipsam sequi, eum ullam.</p>
+                    <div class="flex1">
+                        <div class="photo">
+                    <img src="images/testimonial-1.jpg" alt=""></div>
+                
+                    <div class="identite">
+                    <h5>Nom prénom</h5>
+                    <h6>Métier</h6>
+                </div>
+                </div>
+                </article>
+                <article>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime ab, laudantium iusto minima quos magni amet illo modi repellendus blanditiis alias esse odio similique veritatis quisquam ipsam sequi, eum ullam.</p>
+                    <div class="flex1">
+                        <div class="photo">
+                    <img src="images/testimonial-2.jpg" alt=""></div>
+                
+                    <div class="identite">
+                    <h5>Nom prénom</h5>
+                    <h6>Métier</h6>
+                </div>
+                </div>
+                </article>
+
+            </div>
+            
+            
+        </section>
+
+        <section id="action" class="flex">
+            <div>
+            <h4>Comment adhérer à nos offres?</h4>
+            <p>Contactez nous</p>
+            </div>
+            <div class="btn-contact">
+                
+            </div>
+
+        </section>
+        <section id="infos" class="flex">
+            <div>
+                <h4>A propos</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quisquam iste maiores id fugiat quidem libero harum neque natus. Esse veritatis maxime magni odit cum laborum deserunt praesentium quo sint.</p>
+            </div>
+            <div>
+                <h4>Suivez nous</h4>
+         <a href="#">       
+        <i class="fa-brands fa-facebook fa-xl"></i>
+        </a>
+        <a href="#">
+        <i class="fa-brands fa-twitter fa-xl"></i>
+        </a>
+        <a href="#">
+        <i class="fa-brands fa-instagram fa-xl"></i>
+        </a>
+        <a href="#">
+        <i class="fa-brands fa-pinterest fa-xl"></i>
+        </a>
+            </div>
+            <div>
+                <h4>Souscrire</h4>
+                <p>Abonnez vous pour recevoir notre newsletter</p>
+
+                <form action=""method="">
+                    <div>
+                        <input type="email" placeholder="Votre email" required class="form-control">
+                        <br>
+                        <input type="submit" value="S'abonner" class="btn btn-primary">
+                        
+                    </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Copyrigth 2023 Formation31- Mentions légales</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    </body>
+</html>
+
+

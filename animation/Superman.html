@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superman</title>
+
+    <h1>Prend ton envol superman</h1>
+    <style>
+        body{background-image: url(img/images/pexels-francesco-ungaro-998641.jpg);no-repeat; background-size: cover;}              
+
+        .animation img{width:100%}
+        
+        .animation{
+            position:absolute;
+            top:100%;
+            width: 100px;
+            height: 150px;
+            animation:moveDiagonally 5s linear;
+        }
+        /*img{width: 200px;height: 200px;}
+        figure{position: absolute;
+            bottom: 0;
+            animation-duration:60s;
+        margin-bottom: 5%;
+    margin-left: 10%;}
+
+    a:hover img{animation-duration: 1s;
+            transform: translate(100%, -100%);
+            animation-direction:normal;  
+    
+    */
+                            
+
+        @keyframes moveDiagonally{
+            0%{top:100%;Left:0;transform:scale(2.5)}
+            25%{top:75%;left:25%;transform:scale(2)}
+            50%{top:50%;left:50%;transform:scale(1)}
+            100%{top:0;left:100%;transform:scale(0.5)}
+        }
+
+    
+     
+    </style>
+</head>
+<body>
+    
+    <figure>
+        <div class=animation>
+        <a href="#">
+        <img src="img/images/superman.png">
+        </a>
+        </div>
+    </figure>
+
+
+    
+</body>
+</html>

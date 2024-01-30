@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps en Css</title>
+    <style>
+        /*consignes : step 1: réduire la largeur de l'image pour voir q'un seul bonhomme à la fois
+        diviser la largeur 1472 pixels divisé par le nombre d'étape souhaités (1472x325px) <== dimensions de l'image
+        On prend la largeur de l'image de fond(1472) et on la divise par le nombre d'étape 
+        dance ce cas on divise 1472px/2 = 184px*/
+        .guy{background-image:url(img/images/capguy-walk.png);height:325px;width:184px;
+        /*Animation*/
+        animation: marche 1s steps(8) infinite;}
+
+        @keyframes marche{
+            /*0%{background-position:0px;}
+            100%{background-position:-1472px;}*/
+            from{background-position:0px;}
+            to{background-position: -1472px;}
+        }
+        
+    .caillou{background-image:url(img/images/caillou.jpg);height:133px; width:145px;
+    animation:lever 1s steps(3) infinite;}
+
+    @keyframes lever {
+        from{background-position: 0px;}
+        to{background-position: -433px;}
+        
+    }
+
+
+    </style>
+</head>
+<body>
+    <h1>Steps en CSS</h1>
+    <div class="guy"></div>
+
+    <div class="caillou"></div>
+    
+</body>
+</html>

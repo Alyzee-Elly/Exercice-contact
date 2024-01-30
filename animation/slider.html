@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+
+    <style>
+        .slider{width: 1010px;height:635;overflow: hidden;}
+
+        .slider ul{list-style-type:none;padding: 0;margin: 0;display:flex;position: relative;animation:slides 10s infinite ease;}
+        /*list-style-type: none permet de retirer les puces des list ul*/
+
+        @keyframes slides{
+            /*4 photos : 4 étapes*/
+            0%{left:0px;}
+            25%{left:-1010px;}
+            50%{left:-2020px}
+            100%{left:-3030px}
+        }
+    </style>
+</head>
+<body>
+    <h1>Créer un slider en utilisant les @keyframes</h1>
+
+    <div class="slider">
+        <ul>
+            <li>
+                <img src="img/images/1.jpg" alt="slide 1">
+            </li>
+            <li>
+                <img src="img/images/2.jpg" alt="slide 2">
+            </li>
+            <li>
+                <img src="img/images/5.jpg" alt="slide 3">
+            </li>
+            <li>
+                <img src="img/images/7.jpg" alt="slide 4">
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
